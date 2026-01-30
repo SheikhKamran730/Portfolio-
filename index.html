@@ -1,325 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title> Feroz Ghaffar - Game Developer Portfolio</title>
-  <style>
-   body {
-  background: linear-gradient(to bottom right, #1e1e2f, #0f0f1c);
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kamran Munir | Game Developer Portfolio</title>
+
+<style>
+* {
   margin: 0;
   padding: 0;
-  background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
-  background-color: #0f0f1c;
-  color: white;
-  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background: linear-gradient(180deg, #0a0f1f, #060912);
+  color: white;
+}
+
+/* ===== HEADER ===== */
 header {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* dark blue gradient */
-            padding: 3rem 1rem;
-            text-align: center;
-            border-bottom: 2px solid rgba(0, 255, 255, 0.2);
-            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.05);
-        }
+  text-align: center;
+  padding: 40px 20px 10px;
+}
 
-            header h1 {
-                font-size: 3rem;
-                margin: 0;
-                background: linear-gradient(90deg, #00ffff, #ff00ff);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-weight: bold;
-                letter-spacing: 1px;
-            }
+header h1 {
+  font-size: 38px;
+  color: #4fc3f7;
+}
 
-            header .tagline {
-                font-size: 1.1rem;
-                color: #cccccc;
-                margin-top: 10px;
-                font-style: italic;
-            }
+header p {
+  opacity: 0.8;
+  margin-top: 8px;
+}
 
-            header p {
-                font-size: 1.1rem;
-                margin: 0.5rem 0;
-            }
+.contact {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
 
-        .contact {
-            margin-top: 1rem;
-        }
-
-            .contact a {
-                color: #00f0ff;
-                text-decoration: none;
-                margin: 0 0.5rem;
-            }
-
-        .section {
-            padding: 2rem;
-        }
-
-            .section h2 {
-                text-align: center;
-                font-size: 1.8rem;
-                margin-bottom: 2rem;
-                padding-bottom: 0.6rem;
-                border-bottom: 2px solid #333;
-                color: #00f0ff;
-            }
-
-        .games-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .game-card {
-            background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
-            border-radius: 12px;
-            padding: 12px;
-            margin: 10px;
-            box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
-            transition: transform 0.2s, box-shadow 0.3s ease;
-            text-align: center;
-        }
-
-            .game-card:hover {
-                transform: scale(1.03);
-                box-shadow: 0 0 15px rgba(0, 200, 255, 0.3);
-            }
-
-            .game-card img {
-                width: 90px;
-                height: 90px;
-                object-fit: cover;
-                border-radius: 15px;
-            }
-
-            .game-card h3 {
-                font-size: 1rem;
-                margin: 0.5rem 0;
-                min-height: 2rem;
-            }
-
-        .store-btn {
-            margin-top: 0.5rem;
-            display: inline-block;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-            .store-btn img {
-                width: 140px;
-                height: auto;
-            }
-
-        header h1, header p, .contact a span {
-            color: white;
-        }
-
-        .contact a {
-            margin-right: 1rem;
-            text-decoration: none;
-        }
-
-            .contact a:hover {
-                text-decoration: underline;
-            }
-/* Galaxy Store button tweak (keeps same look on dark bg) */
-.app-store-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(0,0,0,0.45);
-  border-radius: 8px;
-  padding: 6px 10px;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+.contact a {
+  color: #4fc3f7;
   text-decoration: none;
 }
-.app-store-button svg { filter: drop-shadow(0 1px 1px rgba(0,0,0,0.4)); }
 
-.app-store-button img {
-  height: 32px;
+/* ===== SECTION TITLE ===== */
+.section-title {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 22px;
+  color: #00e5ff;
 }
-    
-  </style>
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  padding: 0 30px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: linear-gradient(145deg, #112133, #0c1626);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.card h3 {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.store-btn {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid #333;
+}
+
+.store-btn:hover {
+  background: #1a1a1a;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  margin: 50px 0 20px;
+  opacity: 0.5;
+  font-size: 13px;
+}
+</style>
 </head>
+
 <body>
+
 <header>
-  <h1>Feroz Ghaffar</h1>
-  <p>Unity Game Developer | 1.5+ Year Experience</p>
-  <!-- <p>Working in AdMob, AppLovin Integration & In-App Purchases</p> -->
+  <h1>Kamran Munir</h1>
+  <p>Unity Game Developer | Mobile Games Specialist</p>
   <div class="contact">
-    <a href="mailto:ferozghaffar1856@gmail.com" target="_blank">
-      <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Gmail" style="width: 20px; vertical-align: middle; margin-right: 6px;">
-      Email
-    </a>
-    <a href="https://www.linkedin.com/in/ferozghaffar/" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 20px; vertical-align: middle; margin-right: 6px;">
-      LinkedIn
-    </a>
-    <a href="https://wa.me/923451486848" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; vertical-align: middle; margin-right: 6px;">
-      WhatsApp
-    </a>
+    📧 shkamran730@gmail.com |
+    📞 03488226246 |
+    📍 Canal Park Gulberg 2, Lahore |
+    <a href="http://linkedin.com/in/kamran-munir-341967325" target="_blank">LinkedIn</a>
   </div>
 </header>
 
-  <section class="section">
-   <h2 style="color: #4deaff;; font-size: 1.8rem; margin-bottom: 1rem; text-shadow: 0 0 10px #4deaff;">📱 iOS Games</h2>
-    <div class="games-grid" id="ios-scratch"></div>
-  </section>
+<!-- ================= iOS GAMES ================= -->
+<h2 class="section-title">🎮 iOS Games</h2>
+<div class="grid">
 
-  <!-- <section class="section">
-   <h2 style="color: #4deaff;; font-size: 1.8rem; margin-bottom: 1rem; text-shadow: 0 0 10px #4deaff;">🤖 Android Games</h2>
-    <div class="games-grid" id="android-scratch"></div> -->
-    
-</section>
-  <section class="section">
-    <h2 style="color: #4deaff;; font-size: 1.8rem; margin-bottom: 1rem; text-shadow: 0 0 10px #4deaff;">🛠️ Updates on iOS Games</h2>
-    <div class="games-grid" id="ios-updates"></div>
-  </section>
+  <div class="card"><h3>Water Fun Park Manager 3D</h3>
+    <a class="store-btn" href="https://apps.apple.com/hu/app/water-fun-park-manager-3d/id6753354884" target="_blank">App Store</a></div>
 
-  <section class="section">
-   <h2 style="color: #4deaff;; font-size: 1.8rem; margin-bottom: 1rem; text-shadow: 0 0 10px #4deaff;">🧹 Updates on Android Games</h2>
-    <div class="games-grid" id="android-updates"></div>
-  </section>
+  <div class="card"><h3>FPS Fire Survival Shooter</h3>
+    <a class="store-btn" href="https://apps.apple.com/hu/app/fps-fire-survival-shooter-gun/id6749795186" target="_blank">App Store</a></div>
 
- <script>
- async function fetchIconAndName(url, isIOS, gameObj) {
-  try {
-    if (isIOS) {
+  <div class="card"><h3>Kite Shop Manager Simulator</h3>
+    <a class="store-btn" href="https://apps.apple.com/hu/app/kite-shop-manager-simulator/id6758148786" target="_blank">App Store</a></div>
 
-     return {
-        icon: gameObj.icon || "",
-        name: gameObj.name || "Untitled Game",
-      };
-  const idMatch = url.match(/id(\d+)/);
-  if (!idMatch) return { icon: "", name: "Untitled Game" };
+  <div class="card"><h3>Mall Manager Simulator</h3>
+    <a class="store-btn" href="https://apps.apple.com/pk/app/mall-manager-simulator/id6755783425" target="_blank">App Store</a></div>
 
-  const id = idMatch[1];
+  <div class="card"><h3>Commando Gun Shooting</h3>
+    <a class="store-btn" href="https://apps.apple.com/pk/app/commando-gun-shooting-game/id6755783480" target="_blank">App Store</a></div>
 
-  try {
-    const res = await fetch(`https://itunes.apple.com/lookup?id=${id}&country=pk`);
-    if (!res.ok) throw new Error("Fetch failed");
+  <div class="card"><h3>Book Store Manager Simulator</h3>
+    <a class="store-btn" href="https://apps.apple.com/pk/app/book-store-manager-simulator/id6755783706" target="_blank">App Store</a></div>
 
-    const data = await res.json();
-    const result = data.results?.[0];
+  <div class="card"><h3>Dino Park Manager Simulator</h3>
+    <a class="store-btn" href="https://apps.apple.com/pk/app/dino-park-manager-simulator/id6755783445" target="_blank">App Store</a></div>
 
-    return {
-      icon: result?.artworkUrl512 || result?.artworkUrl100 || "",
-      name: result?.trackName || "Untitled Game",
-    };
-  } catch (e) {
-    console.error("iOS lookup failed", e);
-    return { icon: "", name: "Untitled Game" };
-  }
-}
- else {
-      // Use provided values directly for Android
-      return {
-        icon: gameObj.icon || "",
-        name: gameObj.name || "Untitled Game",
-      };
-    }
-  } catch (e) {
-    return { icon: "", name: "Untitled Game" };
-  }
-}
+  <div class="card"><h3>Animal Zoo Simulator 3D</h3>
+    <a class="store-btn" href="https://apps.apple.com/pk/app/animal-zoo-simulator-3d/id6756069489" target="_blank">App Store</a></div>
 
-async function renderGames(containerId, games, isIOS) {
-  const container = document.getElementById(containerId);
-  for (let game of games) {
-    const { icon, name } = await fetchIconAndName(game.url, isIOS, game);
-    const card = document.createElement("div");
-    card.className = "game-card";
+</div>
 
-// Choose badge img based on url
-let badgeImg = '';
+<!-- ================= ANDROID ================= -->
+<h2 class="section-title">🤖 Android Games</h2>
+<div class="grid">
 
-if (isIOS) {
-  // iOS App Store badge
-  badgeImg = 'https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg';
+  <div class="card"><h3>Tile Triple Puzzle</h3>
+    <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.tile.triple.puzzle.match.game&hl=en" target="_blank">Play Store</a></div>
 
-} else if (game.url && game.url.includes('amazon.com')) {
-  // Amazon Store → custom button (same as Galaxy logic)
-  badgeImg = '';
+  <div class="card"><h3>Thief Robbery Sneak</h3>
+    <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.gc.thief.robbery.stealth.sneak.game" target="_blank">Play Store</a></div>
 
-} else if (game.url && game.url.includes('galaxystore.samsung.com')) {
-  // Galaxy Store → custom button
-  badgeImg = '';
+  <div class="card"><h3>FPS Fire Battleground</h3>
+    <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.gc.fps.fire.battleground.survival.shooter" target="_blank">Play Store</a></div>
 
-} else {
-  // Google Play Store badge
-  badgeImg = 'https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg';
-}
-    // build innerHTML; Samsung uses a custom button if badgeImg empty
-    let storeButtonHtml = '';
-    if (badgeImg) {
-      storeButtonHtml = `<a class="store-btn" href="${game.url}" target="_blank">
-                          <img src="${badgeImg}" alt="Store" />
-                        </a>`;
-    }
-    card.innerHTML = `
-      <img src="${icon}" alt="${name}" />
-      <h3>${name}</h3>
-      ${storeButtonHtml}
-    `;
-    container.appendChild(card);
-  }
-}
-   
-  // Keep your original arrays here
-const iosScratch = [
-   {
-    url: "https://apps.apple.com/hu/app/dutyfree-store-manager-sim-3d/id6757306985",
-    name: "DutyFree Store Manager Sim 3D",
-    icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3f/7e/dd/3f7edd85-27f1-0146-5988-5bdaeb292e2e/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/400x400ia-75.webp"
-  },
-  {
-    url: "https://apps.apple.com/pk/app/zappwing/id6745960441",
-    name: "ZappWing",
-    icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f5/67/f4/f567f4b3-9c63-578c-c9be-91d81c4589d5/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/230x0w.webp"
-  }
-   // aur games yahan add karo (same format)
-];
+  <div class="card"><h3>Mother Simulator</h3>
+    <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.gc.mothersimulator.baby.family.care.life" target="_blank">Play Store</a></div>
 
-const iosUpdates = [
-  { 
-    url: "https://apps.apple.com/pk/app/anti-stress-chillpop-game/id6748053126",
-    name: "Anti-Stress ChillPop Game ",
-    icon: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bb/00/bc/bb00bccc-4ed7-a20f-a9c3-fabbdd20068c/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/400x400ia-75.webp"
-  }
-   // aur games yahan add karo (same format)
-];
+  <div class="card"><h3>Agent Boom Hero Shooter</h3>
+    <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.gc.agent.boom.hero.survivorio.shooter" target="_blank">Play Store</a></div>
 
-const androidScratch = [
-  {
-    name: "Bird Sorting",
-    url: "https://play.google.com/store/apps/details?id=com.gc.bird.sorting.color.game",
-    icon: "https://play-lh.googleusercontent.com/OKj-YaqUgY-ezLiI194F5637XEM0r0bE4NogrDaiA1fpI1DAOZuay9JLtKcyhdOwYQ=w240-h480-rw"
-  }
-   // aur games yahan add karo (same format)
-];
+  <div class="card"><h3>Train Simulator</h3>
+    <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.sgd.train.simulator.driving.game" target="_blank">Play Store</a></div>
 
- const androidUpdates = [
-   
-  {
-    name: "City Train Driver Game",
-    url: "https://play.google.com/store/apps/details?id=com.gcr.police.car.gangster.chase.game",
-    icon: "https://play-lh.googleusercontent.com/Iz2Tb0-thlSdAzS-AJzoBdVTyoXJ70KIWnkW6JnGR0dbSSbBX4_FLaWyHTARbDQYxyg=w240-h480-rw"
-  }
-    // aur games yahan add karo (same format)
-];
-   
-  renderGames("ios-scratch", iosScratch, true);
-  //renderGames("android-scratch", androidScratch, false);
-  renderGames("ios-updates", iosUpdates, true);
-  renderGames("android-updates", androidUpdates, false);
-</script>    
+  <div class="card"><h3>Gangster Vegas Crime</h3>
+    <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.sgd.andreas.mafia.gangster.vegas" target="_blank">Play Store</a></div>
+
+  <div class="card"><h3>Car Driving Racing Simulator</h3>
+    <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.sgd.car.driving.racing.simulator" target="_blank">Play Store</a></div>
+
+</div>
+
+<!-- ================= AMAZON ================= -->
+<h2 class="section-title">🛒 Amazon Store Games</h2>
+<div class="grid">
+
+  <div class="card"><h3>Offroad 4x4 Driving Simulator</h3>
+    <a class="store-btn" href="https://www.amazon.com/offroad-4x4-driving-simulator-truck/dp/B0FX4GDWXM" target="_blank">Amazon</a></div>
+
+  <div class="card"><h3>Advanced Car Parking 3D</h3>
+    <a class="store-btn" href="https://www.amazon.com/Advanced-Car-Parking-3D-Simulator/dp/B0FQCMN3ZH" target="_blank">Amazon</a></div>
+
+  <div class="card"><h3>Prankster Monkey Zoo</h3>
+    <a class="store-btn" href="https://www.amazon.com/IceTech-Prankster-Monkey-Zoo-Animal/dp/B0G597KZH4" target="_blank">Amazon</a></div>
+
+</div>
+
+<footer>
+  © 2026 Kamran Munir — Game Developer Portfolio
+</footer>
+
 </body>
-        </html>
+</html>
